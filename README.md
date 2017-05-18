@@ -1,4 +1,4 @@
-# darthMaulJr.github.io
+# srjit.github.io
 
 This is my personal website.
 
