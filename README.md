@@ -105,8 +105,7 @@ Campaign funnel automation involves automating and analyzing the success rate of
 </p>
 
 
-#### TURF Artificial Intelligence (Rebranded as <a
-href="http://www.xurmo.com/xurmo-platform.html"><b>Xurmo Platform</b></a>) 
+#### TURF Artificial Intelligence (Rebranded as <a href="http://www.xurmo.com/xurmo-platform.html"><b>Xurmo Platform</b></a>) 
 
 <p align="justify">
 Turf Ai is a platform for big data analytics, offering data intake from structured and unstructured data sources, data transformation components, combined with a variety of
