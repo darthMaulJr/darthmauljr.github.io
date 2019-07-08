@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About
 permalink: /about
 comments: true
 ---
@@ -74,7 +74,7 @@ comments: true
 	        We address the problem of identifying fake news from authentic ones as a classification task, trying to measure the degree of relatedness between the headline and the article in discrete levels called stances. The relatedness in our task was defined on four levels - namely agree, discuss, disagree, unrelated. With a number of handcrafted linguistic features along with distance features from vectorized (Word2Vec) fields (header and article), we were able to obtain a maximum classification accuracy of 88%. Random Forests, Support Vector Machines and XGBoost algorithms were used for performance comparison.
           </p>
 
-          <h2> Some projects which I worked on before joining back school for my graduate studies...  </h2>
+          <h2> Projects which I worked on before joining back school for my graduate studies...  </h2>
 
           <p>
 	        <b>Natural Language Workbench</b><br/>
