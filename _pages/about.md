@@ -10,7 +10,7 @@ comments: true
 
         <section>  
           <p>
-	        I am currently a graduate student of Data Science at <a href="https://www.northeastern.edu/">Northeastern University</a>, and a graduate student researcher in Network Science at <a href="https://www.barabasilab.com">Barabasi Lab</a>.
+	        I am currently a graduate student in Data Science at <a href="https://www.northeastern.edu/">Northeastern University</a>, and a graduate student researcher in Network Science at <a href="https://www.barabasilab.com">Barabasi Lab</a>.
           </p>
 
           <p>
