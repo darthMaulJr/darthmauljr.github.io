@@ -313,6 +313,8 @@ span.post-read-more a:hover {
 .mainheading h1.posttitle {
     font-weight: 700;
     margin-bottom: 1rem;
+    font-family: Alegreya Sans;
+    font-size : 300%;
 }
 
 .footer {
@@ -332,7 +334,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: Merriweather;
+    font-family: Lato;
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
@@ -687,7 +689,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Pacifico", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .article-post .h1,
