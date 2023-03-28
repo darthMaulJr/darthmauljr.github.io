@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Inception Movie"
+title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
 author: John
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
