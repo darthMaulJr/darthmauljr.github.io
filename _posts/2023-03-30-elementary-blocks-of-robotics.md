@@ -22,14 +22,10 @@ In addition, it is priced reasonably for the hardware included.
 
 It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
 
-<div>
 <div align="left">
-  <img src="../assets/images/motor-driver.jpg" height="100" />
-</div>
-<div align="center">
-  <img src="../assets/images/breadboard.jpeg" height="100" />
+  <img src="../assets/images/motor-driver.jpg"/>
+  <img src="../assets/images/breadboard.jpeg"/>
 </div>  
-</div>
 
 ##### The Motor Driver Circuit
 
