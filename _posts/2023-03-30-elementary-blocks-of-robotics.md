@@ -22,6 +22,11 @@ In addition, it is priced reasonably for the hardware included.
 
 It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
 
+---
+image: assets/images/motor-driver.jpg
+image: assets/images/breadboard.jpg
+---
+
 ##### The Motor Driver Circuit
 
 Write motor driver circuit details here
