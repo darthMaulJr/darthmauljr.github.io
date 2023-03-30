@@ -2,9 +2,9 @@
 layout: post
 title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
 author: John
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
+categories: [ Electronics, Robotics ]
+tags: [Robotics]
+image: assets/images/bot.jpeg
 description: "My review of Inception movie. Acting, plot and something else in this short description."
 featured: true
 hidden: true
