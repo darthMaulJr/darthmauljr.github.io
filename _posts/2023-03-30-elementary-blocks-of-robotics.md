@@ -13,7 +13,7 @@ Lately, I've been curious if embedded machine learing could simplify life, prima
 
 #### Choosing the processor
 
-When enthusiasts think about processors for hobby embedded application projects the one that first comes to mind is the <a href="https://www.raspberrypi.com/">Raspberry Pi</a. However, supply chain issues in recent years have made it really hard to obtain one. For this reason, I started researching for alternate candidates and among them Jetson Nano was a clear winner. Jetson Nano is a small yet powerful computer developed by Nvidia Inc.  It can run AI frameworks and models, and is very power efficient. It is also supported by <a href="https://developer.nvidia.com/embedded/jetpack">Nvidia's JetPack SDK</a>.
+When enthusiasts think about processors for hobby embedded application projects the one that first comes to mind is the <a href="https://www.raspberrypi.com/">Raspberry Pi</a>. However, supply chain issues in recent years have made it really hard to obtain one. For this reason, I started researching for alternate candidates and among them Jetson Nano was a clear winner. Jetson Nano is a small yet powerful computer developed by Nvidia Inc.  It can run AI frameworks and models, and is very power efficient. It is also supported by <a href="https://developer.nvidia.com/embedded/jetpack">Nvidia's JetPack SDK</a>.
 
 In addition, it is priced reasonably for the hardware included. 
 
