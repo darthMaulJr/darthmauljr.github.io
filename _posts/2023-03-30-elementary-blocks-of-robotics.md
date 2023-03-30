@@ -9,21 +9,21 @@ featured: true
 hidden: true
 ---
 
-### The Processor: Jetson Nano
+#### The Processor: Jetson Nano
 
-### Building the Chassis
+#### Building the Chassis
 
 It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
 
-#### The Motor Driver Circuit
+##### The Motor Driver Circuit
 
 Write motor driver circuit details here
 
-### Powering the processor
+#### Powering the processor
 
 Details of UPS and connecting it to jetson nano
 
-### GPIO Controls
+#### GPIO Controls
 
 
 ```html
