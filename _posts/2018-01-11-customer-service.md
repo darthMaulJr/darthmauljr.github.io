@@ -2,8 +2,7 @@
 layout: post
 title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
 author: John
-categories: [ Electronics, Robotics ]
-tags: [Robotics]
+tags: [Robotics, Programming, Python, Embedded]
 image: assets/images/bot.jpeg
 description: "My review of Inception movie. Acting, plot and something else in this short description."
 featured: true
@@ -13,9 +12,21 @@ rating: 4.5
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
 
-#### How to use?
+#### Jetson Nano
+
+#### Building the Chassis
 
 It's actually really simple! Add the rating in your YAML front matter. It also supports halfs:
+
+#### The Motor Driver Circuit
+
+Write motor driver circuit details here
+
+#### Powering the processor
+
+Details of UPS and connecting it to jetson nano
+
+#### GPIO Controls
 
 ```html
 ---
