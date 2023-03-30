@@ -24,10 +24,10 @@ It's actually really simple! Add the rating in your YAML front matter. It also s
 
 <div>
 <div align="left">
-  <img src="assets/images/motor-driver.jpg" height="100" />
+  <img src="../assets/images/motor-driver.jpg" height="100" />
 </div>
 <div align="right">
-  <img src="assets/images/breadboard.jpg" height="100" />
+  <img src="../assets/images/breadboard.jpg" height="100" />
 </div>  
 </div>
 
