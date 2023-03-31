@@ -3,13 +3,12 @@ layout: post
 title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
 author: John
 tags: [Robotics, Programming, Python, Embedded]
-image: assets/images/bot.jpeg
 description: ""
 featured: true
 hidden: true
 ---
 
-Lately, I've been curious if embedded machine learing could simplify life, primarily along the lines of having a robot assistant or improved home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
+Lately, I've been curious if embedded machine learing could simplify daily life, primarily along the lines of having a robot assistant or improved home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
 
 #### Choosing the processor
 
@@ -49,8 +48,14 @@ Now that the chassis has been built, it is time to choose a portable powering de
   <img src="../assets/images/ups.jpg"/>
 </div>
 
+After placing the UPS, the board has been affixed on to the top layer of the chassis.
 
-#### GPIO Controls
+<div align="left">
+  <img src="../assets/images/bot.jpeg"/>
+</div>
+
+
+#### Driving the motors using GPIO Controls
 
 
 ```html
