@@ -39,7 +39,7 @@ Simplifying this circuit after removing the breadboard and the ribbon cable, we 
   <img src="../assets/images/clean_chassis.jpg"/>
 </div>
 
-</br>
+<br>
 
 #### Powering the processor
 
