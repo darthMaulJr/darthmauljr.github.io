@@ -39,11 +39,16 @@ Simplifying this circuit after removing the breadboard and the ribbon cable, we 
   <img src="../assets/images/clean_chassis.jpg"/>
 </div>
 
+</br>
+
 #### Powering the processor
 
-Now that the chassis has been built, it is time to choose a portable powering device for the robot. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries.
+Now that the chassis has been built, it is time to choose a portable powering device for the robot. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries. It comes with a small OLED display that provides information on batteries voltage, IP address, RAM usage, etc. collected via I2C pins (SDA and SDL). For activating this display, a <a href="https://www.waveshare.com/wiki/UPS_Power_Module">service</a> has to be enabled on the jetson OS. The UPS mounted on the chassis is shown below.
 
-Details of UPS and connecting it to jetson nano
+<div align="left">
+  <img src="../assets/images/ups.jpg"/>
+</div>
+
 
 #### GPIO Controls
 
