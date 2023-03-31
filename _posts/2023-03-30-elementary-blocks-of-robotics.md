@@ -3,6 +3,7 @@ layout: post
 title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
 author: John
 tags: [Robotics, Programming, Python, Embedded]
+image: assets/images/bot.jpeg
 description: ""
 featured: true
 hidden: true
@@ -42,7 +43,7 @@ Simplifying this circuit after removing the breadboard and the ribbon cable, we 
 
 #### Powering the processor
 
-Now that the chassis has been built, it is time to choose a portable powering device for the robot. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries. It comes with a small OLED display that provides information on batteries voltage, IP address, RAM usage, etc. collected via I2C pins (SDA and SDL). For activating this display, a <a href="https://www.waveshare.com/wiki/UPS_Power_Module">service</a> has to be enabled on the jetson OS. The UPS mounted on the chassis is shown below.
+Since the robot has to move around its environment, a portable power source is inevitable. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries. It comes with a small OLED display that provides information on batteries voltage, IP address, RAM usage, etc. collected via I2C pins (SDA and SDL). For activating this display, a <a href="https://www.waveshare.com/wiki/UPS_Power_Module">service</a> has to be enabled on the jetson OS. The UPS mounted on the chassis is shown below.
 
 <div align="left">
   <img src="../assets/images/ups.jpg"/>
@@ -50,12 +51,14 @@ Now that the chassis has been built, it is time to choose a portable powering de
 
 After placing the UPS, the board has been affixed on to the top layer of the chassis.
 
-<div align="left">
-  <img src="../assets/images/bot.jpeg"/>
-</div>
+#### Driving the motors using GPIO Controls.
+
+Now that the body of the robot has been built, it is time to program the logic for its movement! The Nano has a 40 pin <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> layout quite similar to the Raspberry Pi. Enabling voltage on selected ones of these pins is how the robot motion would be controlled.
+
+ The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor 1. GPIO pins 12 and 16 has been wired to these two inputs to control the motion of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2.
 
 
-#### Driving the motors using GPIO Controls
+
 
 
 ```html
