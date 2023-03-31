@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building Elementary Blocks of Robot Motion; Powered by Jetson Nano "
-author: John
+author: Sreejith Sreekumar
 tags: [Robotics, Programming, Python, Embedded]
 image: assets/images/bot.jpeg
 description: ""
