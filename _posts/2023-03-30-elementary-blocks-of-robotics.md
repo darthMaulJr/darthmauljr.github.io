@@ -9,7 +9,7 @@ featured: true
 hidden: true
 ---
 
-Lately, I've been curious if embedded machine learing could simplify daily life, primarily along the lines of having a robot assistant or improved home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
+Lately, I've been curious if embedded machine learing could make my life more fun, or even simplify it primarily along the lines of having a robot assistant or improve home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
 
 #### Choosing the processor
 
@@ -32,7 +32,7 @@ The movement of these motors have to be controlled through logic (or a program),
   <img src="../assets/images/breadboard.jpeg"/>
 </div>
 
-Simplifying this circuit after removing the breadboard and the ribbon cable, we have something that looks like the following left image. The image on the right is the same chassis, cleaned up a bit further to smooth motion.
+De-complicating this circuit after removing the breadboard and the ribbon cable, we have something that looks like the following left image. The image on the right is the same chassis, cleaned up a bit further to smooth motion.
 
 <div align="left">
   <img src="../assets/images/motors.jpeg"/>
