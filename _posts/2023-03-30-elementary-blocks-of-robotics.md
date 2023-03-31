@@ -32,14 +32,16 @@ The movement of these motors have to be controlled through logic (or a program),
   <img src="../assets/images/breadboard.jpeg"/>
 </div>
 
-Simplying this circuit after removing the breadboard and the ribbon cable, we have something that looks like this. The image on the right is the same chassis, cleaned up a bit further.
+Simplifying this circuit after removing the breadboard and the ribbon cable, we have something that looks like the following left image. The image on the right is the same chassis, cleaned up a bit further to smooth motion.
 
 <div align="left">
   <img src="../assets/images/motors.jpeg"/>
-  <img src="../assets/images/clean-chassis.jpg"/>
+  <img src="../assets/images/clean_chassis.jpg"/>
 </div>
 
 #### Powering the processor
+
+Now that the chassis has been built, it is time to choose a portable powering device for the robot. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries.
 
 Details of UPS and connecting it to jetson nano
 
