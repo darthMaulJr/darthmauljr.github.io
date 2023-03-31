@@ -32,10 +32,11 @@ The movement of these motors have to be controlled through logic (or a program),
   <img src="../assets/images/breadboard.jpeg"/>
 </div>
 
-Simplying this circuit after removing the breadboard and the ribbon cable, we have something that looks like this:
+Simplying this circuit after removing the breadboard and the ribbon cable, we have something that looks like this. The image on the right is the same chassis, cleaned up a bit further.
 
 <div align="left">
   <img src="../assets/images/motors.jpeg"/>
+  <img src="../assets/images/clean-chassis.jpg"/>
 </div>
 
 #### Powering the processor
