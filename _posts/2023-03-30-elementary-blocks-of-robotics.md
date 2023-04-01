@@ -57,13 +57,15 @@ Now that the body of the robot has been built, it is time to program the logic f
 
  The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor 1. GPIO pins 12 and 16 has been wired to these two inputs to control the motion of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor 1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.
 
+
+#### The Code!
+
 > For driving the robot forward, motor1 and motor 2 needs to be driven forward, i.e we have to set logical highs on GPIO pins 12 and 22. For driving it back, motor1 and moto2 needs to be turning back, i.e pins 16 and 18 needs to set high.
 
 The <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> python library is what is used here to change the signals on board pins. We use the BCM pin-numbering scheme from Raspberry Pi while programming the GPIO; there is a mapping of each board pin to a different BCM number.
 
 
-
-
+The following python code moves the robot 1 second forward and reverses 5 seconds!
 
 
 
@@ -137,6 +139,6 @@ def main(start):
     forward(1)
 
     # Move back for 5 seconds and stop
-    reverse(5)
+    
 ---
 ```
