@@ -55,20 +55,88 @@ After placing the UPS, the board has been affixed on to the top layer of the cha
 
 Now that the body of the robot has been built, it is time to program the logic for its movement! The Nano has a 40 pin <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> layout quite similar to the Raspberry Pi. Enabling voltage on selected pins and wiring them as input signals to the motors is how the robot motion would be controlled.
 
- The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor 1. GPIO pins 12 and 16 has been wired to these two inputs to control the motion of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2.
+ The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor 1. GPIO pins 12 and 16 has been wired to these two inputs to control the motion of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor 1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.
+
+> For driving the robot forward, motor1 and motor 2 needs to be driven forward, i.e we have to set logical highs on GPIO pins 12 and 22. For driving it back, motor1 and moto2 needs to be turning back, i.e pins 16 and 18 needs to set high.
+
+The <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> python library is what is used here to change the signals on board pins. We use the BCM pin-numbering scheme from Raspberry Pi while programming the GPIO; there is a mapping of each board pin to a different BCM number.
+
+
+
 
 
 
 
 ```html
 ---
-layout: post
-title:  "Inception Movie"
-author: john
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Actors, directing and more."
-rating: 4.5
+import subprocess
+
+import RPi.GPIO as GPIO
+import time
+import nanocamera as nano
+from PIL import Image
+import sys
+
+# Pin Definitions
+output_pin1 = 18  # BCM pin 18, BOARD pin 12
+output_pin2 = 23  # BCM pin 23, BOARD pin 16
+
+output_pin3 = 24  # BCM pin 24, BOARD pin 18
+output_pin4 = 25  # BCM pin 25, BOARD pin 22
+
+
+def turn_right(turn_time):
+
+    GPIO.output(output_pin1, GPIO.HIGH)
+    time.sleep(turn_time)     
+    GPIO.output(output_pin1, GPIO.LOW)
+
+
+def turn_left(turn_time):
+
+    GPIO.output(output_pin4, GPIO.HIGH)
+    time.sleep(turn_time)     
+    GPIO.output(output_pin4, GPIO.LOW)
+
+
+
+def forward(running_time):
+
+    GPIO.output(output_pin1, GPIO.HIGH)
+    GPIO.output(output_pin4, GPIO.HIGH)
+    time.sleep(running_time)
+    GPIO.output(output_pin1, GPIO.LOW)
+    GPIO.output(output_pin4, GPIO.LOW)
+    
+
+
+def reverse(running_time):    
+
+    GPIO.output(output_pin2, GPIO.HIGH)
+    GPIO.output(output_pin3, GPIO.HIGH)
+    time.sleep(running_time)
+    GPIO.output(output_pin2, GPIO.LOW)
+    GPIO.output(output_pin3, GPIO.LOW)
+
+def initialize():
+
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(output_pin1, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin2, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin3, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin4, GPIO.OUT, initial=GPIO.LOW)
+    
+
+
+def main(start):
+    # Pin Setup:
+
+    initialize()
+
+    # Move forward for 1 second and stop
+    forward(1)
+
+    # Move back for 5 seconds and stop
+    reverse(5)
 ---
 ```
