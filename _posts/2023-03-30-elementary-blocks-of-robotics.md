@@ -25,7 +25,7 @@ For the load bearing component, I used components from <a href="https://www.amaz
 
 ##### The Motor Driver Circuit
 
-The movement of these motors have to be controlled through logic (or a program), a few of Nano's <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> pins needs to be programmed to pass turn signals. Since we have two motors for the bot, lets call them motor 1 (Left) and motor 2 (right). These motors are driven using the IC DRV8833 shown below. IN1 and IN2 provides turn direction signal for motor 1, and IN3 and IN4 for motor 2. The other inputs on the IC are Vcc and GND. We tap the unregulated 5V supply from GPIO pin 2 for Vcc voltage and a connection from pin 14 as the GND. OUT1 and OUT2 are the connections to motor 1 and OUT3 and OUT4 are the connections to motor 2. These circuit is shown in the breadboard connection below. The values from even numbered GPIO pins has been taken to the breadboard using a <a href="https://www.amazon.com/dp/B08T9HCL37">ribbon cable</a>
+The movement of these motors have to be controlled through logic (or a program); a few of Nano's <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> pins needs to be programmed to pass turn signals. Since we have two motors for the bot, lets call them motor1 (Left) and motor2 (right). These motors are driven using the IC DRV8833 shown below. IN1 and IN2 provides turn direction signal for motor 1, and IN3 and IN4 for motor 2. The other inputs to the IC are Vcc and GND. We tap the unregulated 5V supply from GPIO pin 2 for Vcc voltage and a connection from pin 14 as the GND. OUT1 and OUT2 are the connections to motor1 and OUT3 and OUT4 are the connections to motor2. This circuit, wired on the breadboard is shown below. The voltages from even numbered GPIO pins (second row of the GPIO pins) has been wired to the breadboard using a <a href="https://www.amazon.com/dp/B08T9HCL37">ribbon cable</a>
 
 <div align="left">
   <img src="../assets/images/motor-driver.jpg"/>
@@ -55,19 +55,16 @@ After placing the UPS, the board has been affixed on to the top layer of the cha
 
 Now that the body of the robot has been built, it is time to program the logic for its movement! The Nano has a 40 pin <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> layout quite similar to the Raspberry Pi. Enabling voltage on selected pins and wiring them as input signals to the motors is how the robot motion would be controlled.
 
- The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor 1. GPIO pins 12 and 16 has been wired to these two inputs to control the motion of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor 1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.
+ The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor1. GPIO pins 12 and 16 has been wired to IN1 and IN2 to control the direction of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.
 
 
 #### The Code!
 
-> For driving the robot forward, motor1 and motor 2 needs to be driven forward, i.e we have to set logical highs on GPIO pins 12 and 22. For driving it back, motor1 and moto2 needs to be turning back, i.e pins 16 and 18 needs to set high.
+> For driving the robot forward, motor1 and motor2 needs to be turned in the forward direction, i.e we have to set logical highs on GPIO pins 12 and 22 (IN1 and IN4). For driving it back, motor1 and motor2 needs to be turned in the reverse directions, i.e pins 16 and 18 (IN2 and IN3) needs to set high.
 
 The <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> python library is what is used here to change the signals on board pins. We use the BCM pin-numbering scheme from Raspberry Pi while programming the GPIO; there is a mapping of each board pin to a different BCM number.
 
-
 The following python code moves the robot 1 second forward and reverses 5 seconds!
-
-
 
 ```html
 ---
