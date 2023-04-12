@@ -5,7 +5,6 @@ author: Sreejith Sreekumar
 tags: [Robotics, Programming, Python, Embedded]
 image: assets/images/bot.jpeg
 description: ""
-featured: true
 hidden: true
 ---
 
