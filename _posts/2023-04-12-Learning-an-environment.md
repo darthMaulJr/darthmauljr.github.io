@@ -8,5 +8,5 @@ featured: false
 hidden: false
 ---
 
-In the <a href="2023-03-30-elementary-blocks-of-robotics.md">previous post</a> we disussed on the basics of building a robot; mostly the electronics and mechanical components of it, and a little bit of the basic programming for motion. Here, we discuss making the robot a little more intelligent with some machine learning!
+In the <a href="https://srjit.github.io/elementary-blocks-of-robotics/">previous post</a> we disussed on the basics of building a robot; mostly the electronics and mechanical components of it, and a little bit of the basic programming for motion. Here, we discuss making the robot a little more intelligent with some machine learning!
 
