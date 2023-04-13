@@ -5,7 +5,7 @@ author: Sreejith Sreekumar
 image: "assets/images/bot_v2.png"
 featured: true
 tags: [Machine Learning, Robotics, Programming, Python, Embedded]
-featured: false
+featured: true
 hidden: false
 ---
 

@@ -5,7 +5,7 @@ author: Sreejith Sreekumar
 tags: [Robotics, Programming, Python, Embedded]
 image: assets/images/bot.jpeg
 description: ""
-hidden: true
+hidden: false
 ---
 
 Lately, I've been curious if embedded machine learing could make my life more fun, or even simplify it primarily along the lines of having a robot assistant or improve home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
