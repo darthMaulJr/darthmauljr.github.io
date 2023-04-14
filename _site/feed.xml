@@ -5,13 +5,13 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Apr 2023 01:10:38 -0700</pubDate>
-    <lastBuildDate>Thu, 13 Apr 2023 01:10:38 -0700</lastBuildDate>
+    <pubDate>Fri, 14 Apr 2023 00:28:55 -0700</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2023 00:28:55 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Learning the environment through Deep Learning</title>
-        <description>&lt;p&gt;In the &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;previous post&lt;/a&gt; we disussed on the basics of building a robot; mostly the electronics and mechanical components of it, and a little bit of the basic programming for motion. Here, we discuss making the robot a little more intelligent with some machine learning!&lt;/p&gt;
+        <description>&lt;p&gt;In the &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;previous post&lt;/a&gt; we discussed the basics of building a robot; mostly the electronics and mechanical components of it, with a little bit of the programming for basic motion. Here, in the following iteration we will be making the robot a little more intelligent with some machine learning!&lt;/p&gt;
 
 &lt;p&gt;It was my friend’s suggestion to modify the robot’s construction and use a tank chassis since the wheels weren’t aligned enough resulting in sideways movement during forward motion. A tank track could also easily climb through the carpets and other uneven sufaces in my house. In addition, it can rotate or turn around itself any degree with minimal motion sideways. The picture shows the modified version of the robot. Although the mechanical parts have changed, this code that was used before is the same here to drive it.&lt;/p&gt;
 
@@ -24,6 +24,18 @@
 &lt;h5 id=&quot;wireless&quot;&gt;Wireless&lt;/h5&gt;
 
 &lt;p&gt;For the wifi module, &lt;a href=&quot;https://www.amazon.com/gp/product/B07SM4SPLV&quot;&gt;this&lt;/a&gt; Dual Mode AC8265 Wireless NIC Module is being used. Since python modules need to be installed, and some prebuilt models need to be downloaded, having a steady wifi connection would be a plus!&lt;/p&gt;
+
+&lt;h4 id=&quot;automating-movement&quot;&gt;Automating Movement&lt;/h4&gt;
+
+&lt;h5 id=&quot;objective&quot;&gt;Objective&lt;/h5&gt;
+
+&lt;p&gt;One of the issues with the previous version of the robot, as mentioned earlier was its uncontrolled sideways motion although it was set on a straight path. In my case, this resulted in the robot drifting slowly off onto my fur floor carpet and getting stuck, or running off to under my furniture.&lt;/p&gt;
+
+&lt;p&gt;A little bit of computer vision based deep learning here to automate the motion of the robot.&lt;/p&gt;
+
+&lt;h5 id=&quot;designing-the-solution&quot;&gt;Designing the solution&lt;/h5&gt;
+
+&lt;p&gt;I started with defining a track for the robot, around the region of motion; in my case, my living room. To teach the robot about the track, plently of pictures were taken using the robot’s camera (what it could see during its motion). The pictures included parts of the normal track, what it’d see if it drifted sideways, or if it ran into some furniture.&lt;/p&gt;
 </description>
         <pubDate>Wed, 12 Apr 2023 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/Learning-an-environment/</link>
