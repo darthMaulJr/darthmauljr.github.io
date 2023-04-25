@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Apr 2023 00:28:55 -0700</pubDate>
-    <lastBuildDate>Fri, 14 Apr 2023 00:28:55 -0700</lastBuildDate>
+    <pubDate>Tue, 25 Apr 2023 00:43:40 -0700</pubDate>
+    <lastBuildDate>Tue, 25 Apr 2023 00:43:40 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -31,11 +31,45 @@
 
 &lt;p&gt;One of the issues with the previous version of the robot, as mentioned earlier was its uncontrolled sideways motion although it was set on a straight path. In my case, this resulted in the robot drifting slowly off onto my fur floor carpet and getting stuck, or running off to under my furniture.&lt;/p&gt;
 
-&lt;p&gt;A little bit of computer vision based deep learning here to automate the motion of the robot.&lt;/p&gt;
+&lt;p&gt;A little bit of computer vision based deep learning is used here to automate the motion of the robot.&lt;/p&gt;
 
-&lt;h5 id=&quot;designing-the-solution&quot;&gt;Designing the solution&lt;/h5&gt;
+&lt;h5 id=&quot;designing--implementing-the-solution&quot;&gt;Designing &amp;amp; Implementing the solution&lt;/h5&gt;
 
-&lt;p&gt;I started with defining a track for the robot, around the region of motion; in my case, my living room. To teach the robot about the track, plently of pictures were taken using the robot’s camera (what it could see during its motion). The pictures included parts of the normal track, what it’d see if it drifted sideways, or if it ran into some furniture.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Data Collection: I started off by defining a track for the robot, around the region of motion; in my case, this was my living room. To teach the robot about the track, plently of pictures were taken using the robot’s camera (what it could see during its motion). The pictures included parts of the normal track, what it’d see if it drifted sideways, or if it ran into some furniture.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Some regions where the robot is expected to move forward (straight path besides the carpet):&lt;/p&gt;
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;../assets/images/room1.jpeg&quot; /&gt;
+  &lt;img src=&quot;../assets/images/room2.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some regions where the robot is expected to reverse its path (eg. About to get stuck near some furniture, or near my house plant):&lt;/p&gt;
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;../assets/images/room3.jpeg&quot; /&gt;
+  &lt;img src=&quot;../assets/images/room4.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The idea here was to let the robot move a minimal amount of distance, capture a picture and let it decide which direction to move next. For training the first version of the decision making, I collected 500 images of my room.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The classifier: At least for the first version of decision making, I’ll be keeping things simple with a small multi-class classfier. The classifier has 4 classes (directions) - forward, reverse, turn-left, turn-right. To make things easy all the collected images were grouped into 4 different folders with the classname (direction) as foldername.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Training: After a bunch of experiments coding and tuning classifiers, I turned to &lt;a href=&quot;https://en.wikipedia.org/wiki/Transfer_learning&quot;&gt;Transfer learning&lt;/a&gt;. Using PyTorch framework, I loaded AlexNet and changed the fully connected layer to return the number of classes (4) in this use case.
+&lt;br /&gt;. The training code can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb&quot;&gt;here&lt;/a&gt;. The model reaches 99% accuracy in about 50 epochs. I wasn’t getting decent enough accuracy during early experiments. To check if I was losing accuracy for a specific class, I had the class level error rates printed out for each epoch. The best model was saved during training as &lt;code class=&quot;highlighter-rouge&quot;&gt;best_model_tank_v1.pth&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Coding the &lt;b&gt;Next-Step Decision Maker&lt;/b&gt;:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
         <pubDate>Wed, 12 Apr 2023 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/Learning-an-environment/</link>
