@@ -5,7 +5,6 @@ author: Sreejith Sreekumar
 image: "assets/images/bot_tank.jpeg"
 featured: true
 tags: [Machine Learning, Robotics, Programming, Python, Embedded]
-featured: true
 hidden: false
 ---
 
