@@ -115,7 +115,7 @@ section.recent-posts {
         padding-right: 0.8rem;
         padding-left: 0.8rem;
         font-family: 'EB Garmond';
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -165,7 +165,7 @@ section.recent-posts {
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
     color: rgba(0, 0, 0, .44);
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -269,7 +269,7 @@ span.post-read-more a:hover {
 }
 
 .mediumnavigation .form-control {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     border-radius: 30px;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.09);
@@ -318,6 +318,20 @@ span.post-read-more a:hover {
     max-height: 30px;
     margin-right: 5px;
 }
+
+
+/* nav .navbar-nav li a{ */
+  /* color: red !important; */
+  /* font-size: 1.2rem; */
+  /* } */
+
+
+/* .card-text { */
+/*     color: red !important; */
+/*     font-size: 1rem; */
+           
+/* } */
+
 
 .mainheading h1.sitetitle {
   /* font-family: Pacifico; */
