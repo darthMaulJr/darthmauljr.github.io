@@ -941,3 +941,15 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+
+
+
+.launch-modal-search {
+    font-family: "EB Gormont";
+    font-style: italic             
+}
+
+/* .nav-link { */
+/*     color: red !important */
+/* } */
