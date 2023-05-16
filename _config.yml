@@ -13,7 +13,7 @@ include: ["_pages"]
 permalink: /:title/
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://srjit.github.io" # the base hostname & protocol for your site
 twitter_username: srjit_
 github_username:  srjit
 paginate: 5
