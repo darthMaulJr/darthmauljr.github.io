@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 May 2023 09:45:14 -0700</pubDate>
-    <lastBuildDate>Tue, 16 May 2023 09:45:14 -0700</lastBuildDate>
+    <pubDate>Tue, 16 May 2023 10:03:17 -0700</pubDate>
+    <lastBuildDate>Tue, 16 May 2023 10:03:17 -0700</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;Coming Soon…&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Apr 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2023/04/25/adding-sarcastic-voice-interactions.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/04/25/adding-sarcastic-voice-interactions.html</guid>
+        <link>http://localhost:4000/adding-sarcastic-voice-interactions/</link>
+        <guid isPermaLink="true">http://localhost:4000/adding-sarcastic-voice-interactions/</guid>
         
         <category>Artificial Intelligence</category>
         
@@ -94,8 +94,8 @@ The idea here was to let the robot move a minimal amount of distance, capture a 
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 25 Apr 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2023/04/25/Learning-an-environment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/04/25/Learning-an-environment.html</guid>
+        <link>http://localhost:4000/Learning-an-environment/</link>
+        <guid isPermaLink="true">http://localhost:4000/Learning-an-environment/</guid>
         
         <category>Machine Learning</category>
         
@@ -246,8 +246,8 @@ def main(start):
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 30 Mar 2023 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2023/03/30/elementary-blocks-of-robotics.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/03/30/elementary-blocks-of-robotics.html</guid>
+        <link>http://localhost:4000/elementary-blocks-of-robotics/</link>
+        <guid isPermaLink="true">http://localhost:4000/elementary-blocks-of-robotics/</guid>
         
         <category>Robotics</category>
         
