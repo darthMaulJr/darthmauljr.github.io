@@ -5,6 +5,7 @@ image: "{{site.baseurl}}/assets/images/bot_tank.jpeg"
 featured: true
 tags: [Machine Learning, Robotics, Programming, Python, Embedded]
 hidden: false
+comments: true
 ---
 
 In the <a href="https://srjit.github.io/elementary-blocks-of-robotics/">previous post</a> we discussed the basics of building a robot; mostly the electronics and mechanical components of it, with a little bit of the programming for basic motion. Here, in the following iteration we will be making the robot a little more intelligent with some machine learning!
