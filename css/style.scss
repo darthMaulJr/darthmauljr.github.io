@@ -673,3 +673,34 @@ font-family: 'Julius Sans One', sans-serif;
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+
+
+#share {
+    margin: 50px 0;
+
+    h2 {
+        font-family: "EB Gormont";
+        font-size: 1.5rem;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+
+                svg {
+                    width: 50px;
+                    height: 50px;
+                    fill: #333;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if site.theme-dark %} dark {% else %} light {% endif %} ">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+ {% if page.layout == 'post' %}
+      <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+  {% endif %}    
+
+      
+
+  </body>
+
+</html>
