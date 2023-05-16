@@ -9,6 +9,8 @@
 title: Sreejith's Notes
 email: ssreejith@protonmail.com
 description: ''
+include: ["_pages"]
+permalink: /:title/
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
