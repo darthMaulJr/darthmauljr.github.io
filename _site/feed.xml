@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sreejith's Notes</title>
+    <title>Sreejith&apos;s Notes</title>
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 May 2023 15:53:11 -0700</pubDate>
-    <lastBuildDate>Mon, 15 May 2023 15:53:11 -0700</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Mon, 15 May 2023 18:22:39 -0700</pubDate>
+    <lastBuildDate>Mon, 15 May 2023 18:22:39 -0700</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>Adding (Sarcastic) Voice Interaction Capabilities to the Robot</title>
@@ -84,10 +84,10 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Training: After a bunch of experiments coding and tuning classifiers, I turned to &lt;a href=&quot;https://en.wikipedia.org/wiki/Transfer_learning&quot;&gt;Transfer learning&lt;/a&gt;. Using PyTorch framework, I loaded AlexNet and changed the fully connected layer to return the number of classes (4) in this use case.
-&lt;br /&gt;. The training code can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb&quot;&gt;here&lt;/a&gt;. The model reaches 99% accuracy in about 50 epochs. I wasn’t getting decent enough accuracy during early experiments. To check if I was losing accuracy for a specific class, I had the class level error rates printed out for each epoch. The best model was saved during training as &lt;code class=&quot;highlighter-rouge&quot;&gt;best_model_tank_v1.pth&lt;/code&gt;.&lt;/p&gt;
+&lt;br /&gt;. The training code can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb&quot;&gt;here&lt;/a&gt;. The model reaches 99% accuracy in about 50 epochs. I wasn’t getting decent enough accuracy during early experiments. To check if I was losing accuracy for a specific class, I had the class level error rates printed out for each epoch. The best model was saved during training as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;best_model_tank_v1.pth&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Coding the &lt;b&gt;Next-Step Decision Maker&lt;/b&gt;: The code for testing the motion of the robot controlled by this neural net classifier can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/living_room_track.py&quot;&gt;here&lt;/a&gt;. As mentioned earlier, we make the motion in discrete steps. At each &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L110&quot;&gt;step&lt;/a&gt; of the motion, the robot &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L115&quot;&gt;captures&lt;/a&gt; an image, and decides an action for the next time step. The captured image is received as a numpy array parameter to &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/decision_engine.py#L43&quot;&gt;this&lt;/a&gt; function, where it undergoes all the pre-processing which was done during the training of the classifier. The engine module also takes care of &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/decision_engine.py#L22&quot;&gt;loading&lt;/a&gt; the previously saved weights from our best model during training, and setting it to eval mode for deployement. The classfied output corresponds to an index that maps to one of the four levels. Returning back to our motion iteration, if the decision made is &lt;code class=&quot;highlighter-rouge&quot;&gt;forward&lt;/code&gt;, the robot moves 0.4 seconds straight forward etc. This part of the code is particularily not intelligent, and has been customized according to the time taken by the robot for 90 degree sideways turns. Moving the robot in different directions has been detailed in the previous &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Coding the &lt;b&gt;Next-Step Decision Maker&lt;/b&gt;: The code for testing the motion of the robot controlled by this neural net classifier can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/living_room_track.py&quot;&gt;here&lt;/a&gt;. As mentioned earlier, we make the motion in discrete steps. At each &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L110&quot;&gt;step&lt;/a&gt; of the motion, the robot &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L115&quot;&gt;captures&lt;/a&gt; an image, and decides an action for the next time step. The captured image is received as a numpy array parameter to &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/decision_engine.py#L43&quot;&gt;this&lt;/a&gt; function, where it undergoes all the pre-processing which was done during the training of the classifier. The engine module also takes care of &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/decision_engine.py#L22&quot;&gt;loading&lt;/a&gt; the previously saved weights from our best model during training, and setting it to eval mode for deployement. The classfied output corresponds to an index that maps to one of the four levels. Returning back to our motion iteration, if the decision made is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forward&lt;/code&gt;, the robot moves 0.4 seconds straight forward etc. This part of the code is particularily not intelligent, and has been customized according to the time taken by the robot for 90 degree sideways turns. Moving the robot in different directions has been detailed in the previous &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Testing/ Deployment: A small portion of the robot motion guided by the classifier can be seen here: &lt;a href=&quot;https://youtube.com/shorts/DHARDDDx3bk?feature=share&quot;&gt;Clip 1: Robot Motion&lt;/a&gt;. Also, here is a short clip of the robot detecting objects in its path and choosing to move back to form a different path in the next timestep: &lt;a href=&quot;https://youtube.com/shorts/d4d3PlKnxdY?feature=share&quot;&gt; Clip 2: Avoiding Collisions&lt;/a&gt;.&lt;/p&gt;
@@ -331,7 +331,7 @@ def main(start):
       </item>
     
       <item>
-        <title>Let's test spoilers</title>
+        <title>Let&apos;s test spoilers</title>
         <description>&lt;p&gt;Director Roland Suso Richter’s enigmatic psychological thriller (direct to video/DVD) was based upon screenwriter Michael Cooney’s own play “Point of Death” - a title that gave away the film’s entire plot twist premise.&lt;/p&gt;
 
 &lt;p&gt;As in many similar films, such as Jacob’s Ladder (1990), Soul Survivors (2001), and The Butterfly Effect (2004), events and people were thoroughly distorted and confused because the protagonist was at the point of death. The tagline was misleading:&lt;/p&gt;
