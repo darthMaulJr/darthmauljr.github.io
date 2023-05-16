@@ -2,17 +2,15 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading small-site-title">{{ site.title }}</h2>
+    <!-- <h2 class="footer-heading small-site-title">{{ site.title }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list footer-content">
           <!-- <li>Powered By <a href="http://github.com/hemangsk/Gravity">Gravity</a></li> -->
           <li>Copyright © {{ site.time | date: "%Y" }} {{ site.title }} </li>
-          <li>Maintained by <a href="mailto:ssreejith@protonmail.com">ssreejith@protonmail.com</a>
-          <li>Made with <i class="fa fa-heart"></i> on <a href="http://jekyllrb.com"><span>{ { Jekyll } }</a></span></li>
-
-
+          <li>Maintained by Sreejith Sreekumar </li>
+          <!-- <li>Made with <i class="fa fa-heart"></i> on <a href="http://jekyllrb.com"><span>{ { Jekyll } }</a></span></li> -->
         </ul>
       </div>
 
@@ -27,6 +25,9 @@
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i> <a href="mailto:ssreejith@protonmail.com">ssreejith@protonmail.com</a>
           </li>
           {% endif %}
         </ul>
