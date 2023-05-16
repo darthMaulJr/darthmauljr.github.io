@@ -1,389 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mediumish</title>
-    <description>Jekyll template, Medium styled, free for bloggers.</description>
-    <link>http://localhost:4000/mediumish-theme-jekyll/</link>
-    <atom:link href="http://localhost:4000/mediumish-theme-jekyll/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jul 2019 00:21:15 -0400</pubDate>
-    <lastBuildDate>Mon, 08 Jul 2019 00:21:15 -0400</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <title>Sreejith&apos;s Notes</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 May 2023 09:45:14 -0700</pubDate>
+    <lastBuildDate>Tue, 16 May 2023 09:45:14 -0700</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
-        <title>Powerful things you can do with the Markdown editor</title>
-        <description>&lt;p&gt;There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
-
-&lt;p&gt;As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.&lt;/p&gt;
-
-&lt;h2 id=&quot;special-formatting&quot;&gt;Special formatting&lt;/h2&gt;
-
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;==highlight==&lt;/li&gt;
-  &lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
-
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.my-link {
-    text-decoration: underline;
-}
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;html&quot;&gt;HTML&lt;/h4&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ml-1 mr-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_blank&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fab fa-twitter&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;css&quot;&gt;CSS&lt;/h4&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.c&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#999988&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.err&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#a61717&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#e3d2d2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;js&quot;&gt;JS&lt;/h4&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// alertbar later&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scrollTop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;280&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.alertbar'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.alertbar'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeOut&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;python&quot;&gt;Python&lt;/h4&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;ruby&quot;&gt;Ruby&lt;/h4&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'redcarpet'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;markdown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Redcarpet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_html&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;c&quot;&gt;C&lt;/h4&gt;
-
-&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/mediumish-theme-jekyll/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
-
-&lt;p&gt;The quick brown jumped over the lazy.&lt;/p&gt;
-
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
-
-&lt;h2 id=&quot;full-html&quot;&gt;Full HTML&lt;/h2&gt;
-
-&lt;p&gt;Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+        <title>Adding (Sarcastic) Voice Interaction Capabilities to the Robot</title>
+        <description>&lt;p&gt;Coming Soon…&lt;/p&gt;
 </description>
-        <pubDate>Tue, 12 Jun 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/powerful-things-markdown-editor/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/powerful-things-markdown-editor/</guid>
+        <pubDate>Tue, 25 Apr 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2023/04/25/adding-sarcastic-voice-interactions.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/04/25/adding-sarcastic-voice-interactions.html</guid>
         
+        <category>Artificial Intelligence</category>
         
-        <category>Jekyll</category>
+        <category>LLMs</category>
         
-        <category>tutorial</category>
+        <category>Robotics</category>
+        
+        <category>Programming</category>
+        
+        <category>Python</category>
+        
         
       </item>
     
       <item>
-        <title>The first mass-produced book to deviate from a rectilinear format</title>
-        <description>&lt;p&gt;The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.&lt;/p&gt;
+        <title>Learning the environment through Deep Learning</title>
+        <description>&lt;p&gt;In the &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;previous post&lt;/a&gt; we discussed the basics of building a robot; mostly the electronics and mechanical components of it, with a little bit of the programming for basic motion. Here, in the following iteration we will be making the robot a little more intelligent with some machine learning!&lt;/p&gt;
 
-&lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
+&lt;p&gt;It was my friend’s suggestion to modify the robot’s construction and use a tank chassis since the wheels weren’t aligned enough resulting in sideways movement during forward motion. A tank track could also easily climb through the carpets and other uneven sufaces in my house. In addition, it can rotate or turn around itself any degree with minimal motion sideways. The picture shows the modified version of the robot. Although the mechanical parts have changed, this code that was used before is the same here to drive it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bot_tank.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;additional-hardware&quot;&gt;&lt;strong&gt;Additional Hardware&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;camera-module&quot;&gt;&lt;strong&gt;Camera Module&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The camera that is being used here is &lt;a href=&quot;https://www.aliexpress.us/item/2255800029242375.html&quot;&gt;IMX219&lt;/a&gt;, an infrared camera with 160 Degree FOV. It is assisted by two IR Leds on either sides as seen in the picture. The picture quality from this camera isn’t great from my experience, however for our project this does decently well.&lt;/p&gt;
+
+&lt;h3 id=&quot;wireless&quot;&gt;&lt;strong&gt;Wireless&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;For the wifi module, &lt;a href=&quot;https://www.amazon.com/gp/product/B07SM4SPLV&quot;&gt;this&lt;/a&gt; Dual Mode AC8265 Wireless NIC Module is being used. Since python modules need to be installed, and some prebuilt models need to be downloaded, having a steady wifi connection would be a plus!&lt;/p&gt;
+
+&lt;h2 id=&quot;automating-movement&quot;&gt;&lt;strong&gt;Automating Movement&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;objective&quot;&gt;&lt;strong&gt;Objective&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;One of the issues with the previous version of the robot, as mentioned earlier was its uncontrolled sideways motion although it was set on a straight path. In my case, this resulted in the robot drifting slowly off onto my fur floor carpet and getting stuck, or running off to under my furniture.&lt;/p&gt;
+
+&lt;p&gt;A little bit of computer vision based deep learning is used here to automate the motion of the robot.&lt;/p&gt;
+
+&lt;h3 id=&quot;designing--implementing-the-solution&quot;&gt;&lt;strong&gt;Designing &amp;amp; Implementing the solution&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ol class=&quot;ol-post&quot;&gt;
+
+&lt;li&gt; Data Collection: I started off by defining a track for the robot, around the region of motion; in my case, this was my living room. To teach the robot about the track, plently of pictures were taken using the robot&apos;s camera (what it could see during its motion). The pictures included parts of the normal track, what it&apos;d see if it drifted sideways, or if it ran into some furniture.
+
+Some regions where the robot is expected to move forward (straight path besides the carpet):
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/room1.jpeg&quot; /&gt;
+  &lt;img src=&quot;/assets/images/room2.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+Some regions where the robot is expected to reverse its path (eg. About to get stuck near some furniture, or near my house plant):
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/room3.jpeg&quot; /&gt;
+  &lt;img src=&quot;/assets/images/room4.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+The idea here was to let the robot move a minimal amount of distance, capture a picture and let it decide which direction to move next. For training the first version of the decision making, I collected 500 images of my room.
+
+&lt;/li&gt;
+
+&lt;li&gt; The classifier: At least for the first version of decision making, I&apos;ll be keeping things simple with a small multi-class classfier. The classifier has 4 classes (directions) - forward, reverse, turn-left, turn-right. To make things easy all the collected images were grouped into 4 different folders with the classname (direction) as foldername. &lt;/li&gt;
+
+&lt;li&gt; Training: After a bunch of experiments coding and tuning classifiers, I turned to &lt;a href=&quot;https://en.wikipedia.org/wiki/Transfer_learning&quot;&gt;Transfer learning&lt;/a&gt;. Using PyTorch framework, I loaded AlexNet and changed the fully connected layer to return the number of classes (4) in this use case.
+&lt;br /&gt;. The training code can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb&quot;&gt;here&lt;/a&gt;. The model reaches 99% accuracy in about 50 epochs. I wasn&apos;t getting decent enough accuracy during early experiments. To check if I was losing accuracy for a specific class, I had the class level error rates printed out for each epoch. The best model was saved during training as `best_model_tank_v1.pth`. &lt;/li&gt;
+
+&lt;li&gt; Coding the &lt;b&gt;Next-Step Decision Maker&lt;/b&gt;: The code for testing the motion of the robot controlled by this neural net classifier can be found &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/living_room_track.py&quot;&gt;here&lt;/a&gt;. As mentioned earlier, we make the motion in discrete steps. At each &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L110&quot;&gt;step&lt;/a&gt; of the motion, the robot &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/living_room_track.py#L115&quot;&gt;captures&lt;/a&gt; an image, and decides an action for the next time step. The captured image is received as a numpy array parameter to &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/316c835b9fadadbc13f7c49f85b97bf4c6805c29/01%20Environment/decision_engine.py#L43&quot;&gt;this&lt;/a&gt; function, where it undergoes all the pre-processing which was done during the training of the classifier. The engine module also takes care of &lt;a href=&quot;https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/decision_engine.py#L22&quot;&gt;loading&lt;/a&gt; the previously saved weights from our best model during training, and setting it to eval mode for deployement. The classfied output corresponds to an index that maps to one of the four levels. Returning back to our motion iteration, if the decision made is `forward`, the robot moves 0.4 seconds straight forward etc. This part of the code is particularily not intelligent, and has been customized according to the time taken by the robot for 90 degree sideways turns. Moving the robot in different directions has been detailed in the previous &lt;a href=&quot;https://srjit.github.io/elementary-blocks-of-robotics/&quot;&gt;post&lt;/a&gt;. &lt;/li&gt;
+
+&lt;li&gt; Testing/ Deployment: A small portion of the robot motion guided by the classifier can be seen here: &lt;a href=&quot;https://youtube.com/shorts/DHARDDDx3bk?feature=share&quot;&gt;Clip 1: Robot Motion&lt;/a&gt;. Also, here is a short clip of the robot detecting objects in its path and choosing to move back to form a different path in the next timestep: &lt;a href=&quot;https://youtube.com/shorts/d4d3PlKnxdY?feature=share&quot;&gt; Clip 2: Avoiding Collisions&lt;/a&gt;. &lt;/li&gt;
+
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 25 Apr 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2023/04/25/Learning-an-environment.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/04/25/Learning-an-environment.html</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Robotics</category>
+        
+        <category>Programming</category>
+        
+        <category>Python</category>
+        
+        <category>Embedded</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Building Elementary Blocks of Robot Motion; Powered by Jetson Nano </title>
+        <description>&lt;p&gt;Lately, I’ve been curious if embedded machine learing could make my life more fun, or even simplify it primarily along the lines of having a robot assistant or improve home automation. This blog post is about getting the basic hardware in shape for working towards that goal.&lt;/p&gt;
+
+&lt;h3 id=&quot;choosing-the-processor&quot;&gt;&lt;strong&gt;Choosing the processor&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;When hobbists think about processors for embedded applications, the one that first comes to mind is the &lt;a href=&quot;https://www.raspberrypi.com/&quot;&gt;Raspberry Pi&lt;/a&gt;. However, supply chain issues in recent years have made it really hard to obtain one. For this reason, I started researching for alternate candidates and among them Jetson Nano was a clear winner. Jetson Nano is a small yet powerful computer developed by Nvidia Inc.  It can run AI frameworks and models, and is very power efficient. It is also supported by &lt;a href=&quot;https://developer.nvidia.com/embedded/jetpack&quot;&gt;Nvidia’s JetPack SDK&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In addition, it is priced reasonably for the hardware included!&lt;/p&gt;
+
+&lt;p&gt;The robot we build here is similar to the &lt;a href=&quot;https://jetbot.org/master/&quot;&gt;Jetbot&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;building-the-chassis&quot;&gt;&lt;strong&gt;Building the Chassis&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;For the load bearing component, I used components from &lt;a href=&quot;https://www.amazon.com/Mixse-Tracking-Chassis-Compatible-Electric/dp/B08RMTJ8RP/&quot;&gt;this&lt;/a&gt; set. As seen in the pictures, the motion is controlled by the two wheels (motors) on either side and a rear-end freewheel. For the motors, instead of using the ones that came with this set, I’ve used &lt;a href=&quot;https://www.amazon.com/Augiimor-Reduction-Gearwheel-Gearbox-Electric/dp/B08B3L7T8D/&quot;&gt;these&lt;/a&gt; N20 motors that can withstand upto 6V.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-motor-driver-circuit&quot;&gt;&lt;strong&gt;The Motor Driver Circuit&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The movement of these motors have to be controlled through logic (or a program); a few of Nano’s &lt;a href=&quot;https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/&quot;&gt;GPIO&lt;/a&gt; pins needs to be programmed to pass turn signals. Since we have two motors for the bot, lets call them motor1 (Left) and motor2 (right). These motors are driven using the IC DRV8833 shown below. IN1 and IN2 provides turn direction signal for motor 1, and IN3 and IN4 for motor 2. The other inputs to the IC are Vcc and GND. We tap the unregulated 5V supply from GPIO pin 2 for Vcc voltage and a connection from pin 14 as the GND. OUT1 and OUT2 are the connections to motor1 and OUT3 and OUT4 are the connections to motor2. This circuit, wired on the breadboard is shown below. The voltages from even numbered GPIO pins (second row of the GPIO pins) has been wired to the breadboard using a &lt;a href=&quot;https://www.amazon.com/dp/B08T9HCL37&quot;&gt;ribbon cable&lt;/a&gt;&lt;/p&gt;
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/motor-driver.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/images/breadboard.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;De-complicating this circuit after removing the breadboard and the ribbon cable, we have something that looks like the following left image. The image on the right is the same chassis, cleaned up a bit further to smooth motion.&lt;/p&gt;
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/motors.jpeg&quot; /&gt;
+  &lt;img src=&quot;/assets/images/clean_chassis.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;powering-the-processor&quot;&gt;&lt;strong&gt;Powering the processor&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Since the robot has to move around its environment, a portable power source is inevitable. I am using the &lt;a href=&quot;https://www.amazon.com/dp/B08BRMZ4G6&quot;&gt;Waveshare UPS Power Module&lt;/a&gt; for Jetson Nano. This UPS needs four &lt;a href=&quot;https://www.amazon.com/dp/B0BC947XDJ&quot;&gt;18650&lt;/a&gt; batteries. It comes with a small OLED display that provides information on batteries voltage, IP address, RAM usage, etc. collected via I2C pins (SDA and SDL). For activating this display, a &lt;a href=&quot;https://www.waveshare.com/wiki/UPS_Power_Module&quot;&gt;service&lt;/a&gt; has to be enabled on the jetson OS. The UPS mounted on the chassis is shown below.&lt;/p&gt;
+
+&lt;div align=&quot;left&quot;&gt;
+  &lt;img src=&quot;/assets/images/ups.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After placing the UPS, the board has been affixed on to the top layer of the chassis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bot.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;driving-the-motors-using-gpio-controls&quot;&gt;&lt;strong&gt;Driving the motors using GPIO Controls&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Now that the body of the robot has been built, it is time to program the logic for its movement! The Nano has a 40 pin &lt;a href=&quot;https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/&quot;&gt;GPIO&lt;/a&gt; layout quite similar to the Raspberry Pi. Enabling voltage on selected pins and wiring them as input signals to the motors is how the robot motion would be controlled.&lt;/p&gt;
+
+&lt;p&gt;The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor1. GPIO pins 12 and 16 has been wired to IN1 and IN2 to control the direction of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-code&quot;&gt;&lt;strong&gt;The Code!&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.&lt;/p&gt;
+  &lt;p&gt;For driving the robot forward, motor1 and motor2 needs to be turned in the forward direction, i.e we have to set logical highs on GPIO pins 12 and 22 (IN1 and IN4). For driving it back, motor1 and motor2 needs to be turned in the reverse directions, i.e pins 16 and 18 (IN2 and IN3) needs to set high.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/NVIDIA/jetson-gpio&quot;&gt;Jetson GPIO&lt;/a&gt; python library is what is used here to change the signals on board pins. We use the BCM pin-numbering scheme from Raspberry Pi while programming the GPIO; there is a mapping of each board pin to a different BCM number.&lt;/p&gt;
 
-&lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Jun 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/first-mass-produced/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/first-mass-produced/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
+&lt;p&gt;The following python code moves the robot 1 second forward and reverses 5 seconds!&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+import subprocess
+
+import RPi.GPIO as GPIO
+import time
+import nanocamera as nano
+from PIL import Image
+import sys
+
+# Pin Definitions
+output_pin1 = 18  # BCM pin 18, BOARD pin 12
+output_pin2 = 23  # BCM pin 23, BOARD pin 16
+
+output_pin3 = 24  # BCM pin 24, BOARD pin 18
+output_pin4 = 25  # BCM pin 25, BOARD pin 22
+
+
+def turn_right(turn_time):
+
+    GPIO.output(output_pin1, GPIO.HIGH)
+    time.sleep(turn_time)     
+    GPIO.output(output_pin1, GPIO.LOW)
+
+
+def turn_left(turn_time):
+
+    GPIO.output(output_pin4, GPIO.HIGH)
+    time.sleep(turn_time)     
+    GPIO.output(output_pin4, GPIO.LOW)
+
+
+
+def forward(running_time):
+
+    GPIO.output(output_pin1, GPIO.HIGH)
+    GPIO.output(output_pin4, GPIO.HIGH)
+    time.sleep(running_time)
+    GPIO.output(output_pin1, GPIO.LOW)
+    GPIO.output(output_pin4, GPIO.LOW)
     
-      <item>
-        <title>Education must also train one for quick, resolute and effective thinking.</title>
-        <description>&lt;p&gt;There are lots of powerful things you can do with the Markdown editor&lt;/p&gt;
 
-&lt;p&gt;If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
 
-&lt;p&gt;As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.&lt;/p&gt;
+def reverse(running_time):    
 
-&lt;h2 id=&quot;special-formatting&quot;&gt;Special formatting&lt;/h2&gt;
+    GPIO.output(output_pin2, GPIO.HIGH)
+    GPIO.output(output_pin3, GPIO.HIGH)
+    time.sleep(running_time)
+    GPIO.output(output_pin2, GPIO.LOW)
+    GPIO.output(output_pin3, GPIO.LOW)
 
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
+def initialize():
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;==highlight==&lt;/li&gt;
-  &lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
-
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.my-link {
-    text-decoration: underline;
-}
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/mediumish-theme-jekyll/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
-
-&lt;p&gt;The quick brown jumped over the lazy.&lt;/p&gt;
-
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
-
-&lt;h2 id=&quot;full-html&quot;&gt;Full HTML&lt;/h2&gt;
-
-&lt;p&gt;Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Jun 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/education/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/education/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(output_pin1, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin2, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin3, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(output_pin4, GPIO.OUT, initial=GPIO.LOW)
     
-      <item>
-        <title>Accumulated experience of social living</title>
-        <description>&lt;p&gt;The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.&lt;/p&gt;
 
-&lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 
-&lt;p&gt;The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.&lt;/p&gt;
+def main(start):
+    # Pin Setup:
 
-&lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
+    initialize()
 
-&lt;blockquote&gt;
-  &lt;p&gt;It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Tue, 12 Jun 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/acumulated-experience/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/acumulated-experience/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
+    # Move forward for 1 second and stop
+    forward(1)
+
+    # Move back for 5 seconds and stop
     
-      <item>
-        <title>About Bundler</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt; installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundler&lt;/code&gt; is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; files inform &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt; and just &lt;code class=&quot;highlighter-rouge&quot;&gt;run jekyll serve&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;When you run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; uses the gems and versions as specified in &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; to ensure your Jekyll site builds with no compatibility or dependency conflicts.&lt;/p&gt;
-
-&lt;p&gt;For more information about how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.&lt;/p&gt;
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Sat, 12 May 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/about-bundler/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/about-bundler/</guid>
+        <pubDate>Thu, 30 Mar 2023 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2023/03/30/elementary-blocks-of-robotics.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/03/30/elementary-blocks-of-robotics.html</guid>
         
+        <category>Robotics</category>
         
-        <category>Jekyll</category>
+        <category>Programming</category>
         
-      </item>
-    
-      <item>
-        <title>We all wait for summer</title>
-        <description>&lt;p&gt;As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.&lt;/p&gt;
-
-&lt;p&gt;It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/we-all-wait-for-summer/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/we-all-wait-for-summer/</guid>
+        <category>Python</category>
         
+        <category>Embedded</category>
         
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Tree of Codes</title>
-        <description>&lt;p&gt;The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.&lt;/p&gt;
-
-&lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
-
-&lt;p&gt;The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/tree-of-codes/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/tree-of-codes/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Red Riding Hood</title>
-        <description>&lt;p&gt;The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.&lt;/p&gt;
-
-&lt;p&gt;An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.&lt;/p&gt;
-
-&lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/red-riding/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/red-riding/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Press and education</title>
-        <description>&lt;p&gt;Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction.&lt;/p&gt;
-
-&lt;p&gt;Education must also train one for quick, &lt;strong&gt;resolute and effective thinking&lt;/strong&gt;. To think incisively and to think for one’s self is very difficult.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The function of education, therefore, is to teach one to think intensively and to think critically. But education which stops with efficiency may prove the greatest menace to society. The most dangerous criminal may be the man gifted with reason, but with no morals.&lt;/p&gt;
-
-&lt;p&gt;The late Eugene Talmadge, in my opinion, possessed one of the better minds of Georgia, or even America. Moreover, he wore the Phi Beta Kappa key. By all measuring rods, Mr. Talmadge could think critically and intensively; yet he contends that I am an inferior being. Are those the types of men we call educated?&lt;/p&gt;
-
-&lt;p&gt;We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/press-and-education/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/press-and-education/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
-        
-      </item>
-    
-      <item>
-        <title>Options for creating a new site with Jekyll</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new &amp;lt;PATH&amp;gt;&lt;/code&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;myblog&lt;/code&gt;. Here are some additional details:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To install the Jekyll site into the directory you’re currently in, run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; automatically initiates &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install the dependencies required. (If you don’t want Bundler to install the gems, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --skip-bundle&lt;/code&gt;.)&lt;/li&gt;
-  &lt;li&gt;By default, the Jekyll site installed by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.&lt;/li&gt;
-  &lt;li&gt;We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --blank&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;To learn about other parameters you can include with &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;, type &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new --help&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/mediumish-theme-jekyll/options-for-creating-new-site-with-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/mediumish-theme-jekyll/options-for-creating-new-site-with-jekyll/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
         
       </item>
     

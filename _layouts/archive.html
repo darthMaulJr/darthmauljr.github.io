@@ -1,21 +1,29 @@
 ---
-layout: default
-title: Archive
+layout: page
 ---
 
-<!-- Begin List Posts
-================================================== -->
-<section class="recent-posts">
-<div class="section-title">
-    <h2>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h2>
+
+{% for post in site.posts %}
+{% for cat in post.categories %}
+{% if cat == page.category %}
+
+
+
+<div class="post postContent">
+  <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <div class="postTag">
+    {{post.tag}}
+  </div>
+  <br>
+  <div class="postTitle">
+  <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+  </div>
+  <div class="postExt">
+    {{post.excerpt}}
+  </div>
 </div>
-<div class="row listrecent">
-
-{% for post in page.posts %}
-
-    {% include postbox.html %}
-
+{% endif %}
 {% endfor %}
 
-</div>
-</section>
+{% endfor %}
