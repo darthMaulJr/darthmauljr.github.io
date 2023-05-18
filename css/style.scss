@@ -161,9 +161,9 @@ a {
 blockquote {
     border-left: 4px solid;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    // font-style: italic;
 
     > :last-child {
         margin-bottom: 0;

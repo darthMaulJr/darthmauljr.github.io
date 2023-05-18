@@ -66,8 +66,7 @@ The <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> python libra
 
 The following python code moves the robot 1 second forward and reverses 5 seconds!
 
-```html
----
+{% highlight python linenos %}
 import subprocess
 
 import RPi.GPIO as GPIO
@@ -136,6 +135,4 @@ def main(start):
     forward(1)
 
     # Move back for 5 seconds and stop
-    
----
-```
+{% endhighlight %}
