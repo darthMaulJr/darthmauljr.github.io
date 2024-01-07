@@ -63,7 +63,7 @@ The idea was to enable the robot to move a short distance, capture an image, and
 <li>
 Training: Following numerous experiments involving coding and fine-tuning classifiers, I turned to <a href="https://en.wikipedia.org/wiki/Transfer_learning">Transfer learning</a>. Utilizing the PyTorch framework, I loaded AlexNet and adjusted the fully connected layer to accommodate the number of classes (4) relevant to this use case.
 <br>
-The training code is available <a href="https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb">here</a>.. Remarkably, the model achieves 99% accuracy in approximately 50 epochs. Initial experiments did not yield satisfactory accuracy, prompting a closer examination. To identify any specific class causing accuracy loss, I had the class-level error rates printed for each epoch. The most proficient model was saved during training and labeled as 'best_model_tank_v1.pth'.
+The training code is available <a href="https://github.com/srjit/jetson-scripts/blob/main/01%20Environment/train-decision-making.ipynb">here</a>. Remarkably, the model achieves 99% accuracy in approximately 50 epochs. Initial experiments did not yield satisfactory accuracy, prompting a closer examination. To identify any specific class causing accuracy loss, I had the class-level error rates printed for each epoch. The most proficient model was saved during training and labeled as 'best_model_tank_v1.pth'.
 </li>
 
 <li>
