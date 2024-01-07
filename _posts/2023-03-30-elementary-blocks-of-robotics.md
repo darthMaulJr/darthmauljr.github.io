@@ -7,11 +7,11 @@ description: ""
 hidden: false
 ---
 
-Lately, I've been curious if embedded machine learing could make my life more fun, or even simplify it primarily along the lines of having a robot assistant or improve home automation. This blog post is about getting the basic hardware in shape for working towards that goal.
+Recently, I've found myself pondering the potential of integrating embedded machine learning into my daily routine. The prospect of enhancing the enjoyment and simplifying the complexities of life, whether through a robotic assistant or improved home automation, has captured my curiosity. This blog post delves into the foundational steps of preparing the basic hardware necessary to embark on this journey.
 
 ### **Choosing the processor**
 
-When hobbists think about processors for embedded applications, the one that first comes to mind is the <a href="https://www.raspberrypi.com/">Raspberry Pi</a>. However, supply chain issues in recent years have made it really hard to obtain one. For this reason, I started researching for alternate candidates and among them Jetson Nano was a clear winner. Jetson Nano is a small yet powerful computer developed by Nvidia Inc.  It can run AI frameworks and models, and is very power efficient. It is also supported by <a href="https://developer.nvidia.com/embedded/jetpack">Nvidia's JetPack SDK</a>.
+When hobbyists consider processors for embedded applications, the <a href="https://www.raspberrypi.com/">Raspberry Pi</a> is often the initial choice. However, persistent supply chain challenges in recent years have significantly hindered its availability. Consequently, I began exploring alternative candidates, and among them, the Jetson Nano emerged as the clear frontrunner. Developed by Nvidia Inc., the Jetson Nano is a compact yet potent computer. It boasts the capability to execute AI frameworks and models while maintaining impressive power efficiency. Furthermore, it is complemented by <a href="https://developer.nvidia.com/embedded/jetpack">Nvidia's JetPack SDK</a>, enhancing its overall support and functionality
 
 In addition, it is priced reasonably for the hardware included!
 
@@ -19,18 +19,19 @@ The robot we build here is similar to the <a href="https://jetbot.org/master/">J
 
 ### **Building the Chassis**
 
-For the load bearing component, I used components from <a href="https://www.amazon.com/Mixse-Tracking-Chassis-Compatible-Electric/dp/B08RMTJ8RP/">this</a> set. As seen in the pictures, the motion is controlled by the two wheels (motors) on either side and a rear-end freewheel. For the motors, instead of using the ones that came with this set, I've used <a href="https://www.amazon.com/Augiimor-Reduction-Gearwheel-Gearbox-Electric/dp/B08B3L7T8D/">these</a> N20 motors that can withstand upto 6V.
+I incorporated components from <a href="https://www.amazon.com/Mixse-Tracking-Chassis-Compatible-Electric/dp/B08RMTJ8RP/">this</a> set for the load-bearing element of the project. As depicted in the accompanying images, the movement is governed by the two wheels (motors) positioned on either side and a freewheel at the rear. Instead of utilizing the motors provided in the initial set, I opted for <a href="https://www.amazon.com/Augiimor-Reduction-Gearwheel-Gearbox-Electric/dp/B08B3L7T8D/">these</a> N20 motors, renowned for their resilience up to 6V.
 
 ### **The Motor Driver Circuit**
 
-The movement of these motors have to be controlled through logic (or a program); a few of Nano's <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> pins needs to be programmed to pass turn signals. Since we have two motors for the bot, lets call them motor1 (Left) and motor2 (right). These motors are driven using the IC DRV8833 shown below. IN1 and IN2 provides turn direction signal for motor 1, and IN3 and IN4 for motor 2. The other inputs to the IC are Vcc and GND. We tap the unregulated 5V supply from GPIO pin 2 for Vcc voltage and a connection from pin 14 as the GND. OUT1 and OUT2 are the connections to motor1 and OUT3 and OUT4 are the connections to motor2. This circuit, wired on the breadboard is shown below. The voltages from even numbered GPIO pins (second row of the GPIO pins) has been wired to the breadboard using a <a href="https://www.amazon.com/dp/B08T9HCL37">ribbon cable</a>
+To control the movement of these motors, logical commands (or a program) are essential. Programming specific <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> pins on the Nano is required to transmit turn signals effectively. With two motors designated as motor1 (Left) and motor2 (Right), both are operated by the DRV8833 IC, as illustrated below. IN1 and IN2 manage the turn direction signal for motor1, while IN3 and IN4 serve the same purpose for motor2. The IC's other inputs include Vcc and GND, drawing unregulated 5V power from GPIO pin 2 for Vcc and establishing a connection from pin 14 as the GND. OUT1 and OUT2 connect to motor1, while OUT3 and OUT4 are linked to motor2. The breadboard configuration of this circuit is displayed below. The voltages from even-numbered GPIO pins (second row of the GPIO pins) have been seamlessly integrated into the breadboard via a <a href="https://www.amazon.com/dp/B08T9HCL37">ribbon cable</a>.
+
 
 <div align="left">
   <img src="{{ site.baseurl }}/assets/images/motor-driver.jpg"/>
   <img src="{{ site.baseurl }}/assets/images/breadboard.jpeg"/>
 </div>
 
-De-complicating this circuit after removing the breadboard and the ribbon cable, we have something that looks like the following left image. The image on the right is the same chassis, cleaned up a bit further to smooth motion.
+Simplifying this circuit by eliminating the breadboard and the ribbon cable, we are left with a configuration resembling the image on the left. The right image showcases the same chassis, further refined for smoother motion.
 
 <div align="left">
   <img src="{{ site.baseurl }}/assets/images/motors.jpeg"/>
@@ -41,7 +42,8 @@ De-complicating this circuit after removing the breadboard and the ribbon cable,
 
 ### **Powering the processor**
 
-Since the robot has to move around its environment, a portable power source is inevitable. I am using the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> for Jetson Nano. This UPS needs four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries. It comes with a small OLED display that provides information on batteries voltage, IP address, RAM usage, etc. collected via I2C pins (SDA and SDL). For activating this display, a <a href="https://www.waveshare.com/wiki/UPS_Power_Module">service</a> has to be enabled on the jetson OS. The UPS mounted on the chassis is shown below.
+To facilitate the robot's mobility within its environment, a portable power source is indispensable. For this purpose, I've opted for the <a href="https://www.amazon.com/dp/B08BRMZ4G6">Waveshare UPS Power Module</a> designed for the Jetson Nano. This UPS module requires four <a href="https://www.amazon.com/dp/B0BC947XDJ">18650</a> batteries and includes a compact OLED display. The display offers real-time information on battery voltage, IP address, RAM usage, and more, obtained through I2C pins (SDA and SCL). To activate this display, a corresponding <a href="https://www.waveshare.com/wiki/UPS_Power_Module">service</a> must be enabled on the Jetson OS. The UPS, seamlessly mounted on the chassis, is depicted below.
+
 
 <div align="left">
   <img src="{{ site.baseurl }}/assets/images/ups.jpg"/>
@@ -53,16 +55,16 @@ After placing the UPS, the board has been affixed on to the top layer of the cha
 
 ### **Driving the motors using GPIO Controls**
 
-Now that the body of the robot has been built, it is time to program the logic for its movement! The Nano has a 40 pin <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> layout quite similar to the Raspberry Pi. Enabling voltage on selected pins and wiring them as input signals to the motors is how the robot motion would be controlled.
+Now that the physical structure of the robot is in place, the next step involves programming the logic governing its movement. The Nano boasts a 40-pin <a href="https://jetsonhacks.com/2019/06/07/jetson-nano-gpio/">GPIO</a> layout, closely resembling that of the Raspberry Pi. The manipulation of voltage on selected pins, configured as input signals to the motors, is the key to controlling the robot's motion.
 
- The GPIO pins numbered 12, 16, 18 and 22 are the ones being used here for motion control. As mentioned earlier, IN1 and IN2 are the inputs of the motor driver chip for motor1. GPIO pins 12 and 16 has been wired to IN1 and IN2 to control the direction of motor1. Similarly, pins 18 and 22 are wired to IN3 and IN4 for controlling motor2. A logical high on IN1 (pin 12) drives motor1 forward whereas a logical high on IN2 (pin 16) drives it backward. Similarily, a logical high on IN4 (pin 22) drives the motor forward whereas that on IN3 (pin 18) drives it backward.
+Specifically, GPIO pins numbered 12, 16, 18, and 22 are integral to motion control in this setup. As previously mentioned, IN1 and IN2 serve as inputs for the motor driver chip associated with motor1. GPIO pins 12 and 16 are intricately connected to IN1 and IN2, determining the direction of motor1. Similarly, pins 18 and 22 are linked to IN3 and IN4 for motor2 control. A logical high signal on IN1 (pin 12) propels motor1 forward, while a logical high on IN2 (pin 16) prompts reverse motion. Likewise, a logical high on IN4 (pin 22) directs motor2 forward, whereas IN3 (pin 18) induces backward motion.
 
 
 ### **The Code!**
 
-> For driving the robot forward, motor1 and motor2 needs to be turned in the forward direction, i.e we have to set logical highs on GPIO pins 12 and 22 (IN1 and IN4). For driving it back, motor1 and motor2 needs to be turned in the reverse directions, i.e pins 16 and 18 (IN2 and IN3) needs to set high.
+> To propel the robot forward, both motor1 and motor2 must rotate in the forward direction. This entails setting logical highs on GPIO pins 12 and 22 (IN1 and IN4). Conversely, to drive the robot backward, the rotation of motor1 and motor2 should be reversed, necessitating the setting of pins 16 and 18 (IN2 and IN3) to logical highs.
 
-The <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> python library is what is used here to change the signals on board pins. We use the BCM pin-numbering scheme from Raspberry Pi while programming the GPIO; there is a mapping of each board pin to a different BCM number.
+In this context, the manipulation of signals on the board pins is facilitated through the <a href="https://github.com/NVIDIA/jetson-gpio">Jetson GPIO</a> Python library. While programming the GPIO, we adopt the BCM pin-numbering scheme from Raspberry Pi, benefiting from a convenient mapping of each board pin to a corresponding BCM number.
 
 The following python code moves the robot 1 second forward and reverses 5 seconds!
 
